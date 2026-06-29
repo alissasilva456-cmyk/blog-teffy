@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
 
     // ==========================================================================
     // RECURSO 1: CONFIGURAÇÃO DOS LIVROS (PÁGINA INICIAL)
