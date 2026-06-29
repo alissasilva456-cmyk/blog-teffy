@@ -656,50 +656,49 @@ html {
 }
 /* ==========================================================================
    CÓDIGO EXCLUSIVO PARA CELULARES (Telas menores que 768px)
-   Este bloco corrige as quebras de texto e elementos espremidos no mobile
    ========================================================================== */
 @media screen and (max-width: 768px) {
 
-    /* 1. Força os containers principais a usarem a largura total da tela */
-    .container-contato,
-    .container-conteudo,
-    .container,
-    main,
-    section {
+    /* 1. Força o container principal a usar a tela toda */
+    .container-contato {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto !important;
-        padding-left: 20px !important;  /* Margem interna para o texto não colar na bordas */
-        padding-right: 20px !important;
+        padding: 20px !important;
         box-sizing: border-box !important;
     }
 
-    /* 2. Corrige layouts flex que estão travados lado a lado (evita esmagar o texto) */
-    .secao-sobre,
-    .flex,
-    [style*="display: flex"],
-    [style*="display: inline-flex"] {
-        flex-direction: column !important; /* Empilha foto e texto verticalmente */
+    /* 2. Muda a seção para coluna para empilhar o texto e a foto */
+    .secao-sobre {
+        display: flex !important;
+        flex-direction: column !important; /* Empilha verticalmente */
         flex-wrap: wrap !important;
-        gap: 25px !important;              /* Espaçamento perfeito para o celular */
+        gap: 30px !important;              /* Espaçamento ideal entre texto e foto */
         width: 100% !important;
     }
 
-    /* 3. Garante que qualquer parágrafo ou texto se espalhe normalmente na horizontal */
-    p, span, h1, h2, h3 {
+    /* 3. ALVO PRINCIPAL: Força a caixinha do texto a se abrir totalmente */
+    .texto-sobre {
         width: 100% !important;
+        max-width: 100% !important;
+        display: block !important;
+    }
+
+    /* 4. Garante que os parágrafos se comportem normalmente */
+    .texto-sobre p, 
+    .texto-sobre h2 {
+        width: 100% !important;
+        white-space: normal !important;
         word-break: normal !important;
         overflow-wrap: break-word !important;
-        white-space: normal !important;
     }
 
-    /* 4. Ajusta imagens para que fiquem responsivas e centralizadas */
-    .secao-sobre img,
-    img {
-        max-width: 280px !important;       /* Evita que a foto fique gigante ou estoure a tela */
+    /* 5. Ajusta o tamanho da foto no celular para não quebrar a tela */
+    .foto-sobre-container, 
+    .foto-sobre-container img {
+        max-width: 280px !important;
         width: 100% !important;
         height: auto !important;
         margin: 0 auto !important;
-        display: block !important;
     }
 }
