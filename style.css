@@ -741,3 +741,26 @@ html {
         margin: 0 !important;
     }
 }
+/* ==========================================================================
+   ESTILO VISUAL DO BOTÃO VOLTAR AO TOPO (PROVOCA O EFEITO INTERATIVO)
+   ========================================================================== */
+#btnVoltarTopo {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    background-color: #3d2419 !important; /* Cor marrom idêntica ao seu site */
+    color: white !important;
+    border: none !important;
+    padding: 15px 18px !important;
+    border-radius: 50% !important; /* Deixa o botão perfeitamente redondo */
+    cursor: pointer !important;
+    font-size: 18px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important; /* Dá uma sombra bonita */
+    z-index: 9999 !important; /* Garante que fique na frente de tudo */
+    transition: background 0.3s, transform 0.2s !important;
+}
+
+#btnVoltarTopo:hover {
+    background-color: #573424 !important; /* Muda sutilmente de cor ao passar o mouse */
+    transform: scale(1.1) !important; /* Dá um leve pulinho ao passar o mouse */
+}
