@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Mostra o botão apenas se o usuário rolar a página para baixo
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 300) {
+        if (window.scrollY > 50) {
             botaoTopo.style.display = 'block';
         } else {
             botaoTopo.style.display = 'none';
