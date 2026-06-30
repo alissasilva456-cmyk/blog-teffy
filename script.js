@@ -1,8 +1,5 @@
  document.addEventListener("DOMContentLoaded", function() {
-
-    // ==========================================================================
-    // RECURSO 1: CONFIGURAÇÃO DOS LIVROS (PÁGINA INICIAL)
-    // ==========================================================================
+    // RECURSO: CONFIGURAÇÃO DOS LIVROS (PÁGINA INICIAL)
     const destaques = {
         livro1: { titulo: "A Biblioteca da Meia-Noite", sigla: "ABMN" },
         livro2: { titulo: "O Pequeno Príncipe", sigla: "opp" },
@@ -18,11 +15,8 @@
         document.getElementById("tituloLivro2").innerText = destaques.livro2.titulo;
         document.getElementById("capaLivro2").innerText = destaques.livro2.sigla;
     }
+    // RECURSO: FORMULÁRIO DE CONTATO COM VALIDAÇÃO (EXIGÊNCIA DA ATIVIDADE)
 
-
-    // ==========================================================================
-    // RECURSO 2: FORMULÁRIO DE CONTATO COM VALIDAÇÃO (EXIGÊNCIA DA ATIVIDADE)
-    // ==========================================================================
     const formContato = document.getElementById('formContato');
 
     if (formContato) {
@@ -51,11 +45,7 @@
             formContato.reset(); // Limpa as caixas de texto do formulário
         });
     }
-
-
-    // ==========================================================================
-    // RECURSO 3: EFEITO INTERATIVO BÔNUS (BOTÃO VOLTAR AO TOPO)
-    // ==========================================================================
+    // RECURSO: EFEITO INTERATIVO (BOTÃO VOLTAR AO TOPO)
     // Cria o botão dinamicamente em qualquer página que o script estiver ativo
     const botaoTopo = document.createElement('button');
     botaoTopo.innerHTML = '▲';
