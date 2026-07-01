@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site literario</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(90deg, rgba(214, 147, 147, 0.926), rgb(75, 26, 26));
+            color: rgba(0, 0, 0, 0.756);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .contato-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .contato-item::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+        .icone-contato {
+            width: 30px;
+            height: 30px;
+            max-width: 24px;
+            max-height: 24px;
+            object-fit: contain;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site literário</h1>
+    <h2>Quem sou eu?</h2>
+     <img src="imagem de stefani.png" alt="Stefani in a literary environment with books and warm tones">
+     <p>Meu nome é <strong>Stefani</strong>, tenho 20 anos e sou uma pessoa apaixonada por literatura e sempre em busca de novas descobertas através dos livros.</p>
+    <h2>Meus livros favoritos</h2>
+    <ul>
+        <li>O Pequeno Príncipe - Antoine de Saint-Exupéry</li>
+        <li>A culpa da estrela - John Green</li>
+        <li>O Hobbit - J.R.R. Tolkien</li>
+        <li>Se eu ficar - Gayle Forman</li>
+    </ul>
+    <h2>Como entrar em contato comigo?</h2>
+    <ul>
+        <li class="contato-item">
+            <img src="free-logotipo-do-instagram-icon-svg-download-png-7574395.webp" alt="Instagram logo next to the handle teffylivros" class="icone-contato">
+            <a href="https://www.instagram.com/teffylivros?igsh=MWFsc2k1YzVqNG53ZA==" target="_blank">@teffylivros</a>
+        </li>
+        <li class="contato-item">
+            <img src="gmail.webp" alt="imagem do icone gmail" class="icone-contato">
+            <a href="mailto:teffy.luiz35@gmail.com" target="_blank">teffy.luiz35@gmail.com</a>
+        </li>
+    </ul>                   
+</body>
+</html>
